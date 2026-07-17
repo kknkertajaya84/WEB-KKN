@@ -1,0 +1,244 @@
+/* ==========================================================================
+   TEMA: ORGANIC / RUSTIC MODERN (WARM & EARTHY) + ANIMASI
+   ========================================================================== */
+
+/* --- 1. FONTS & VARIABLES --- */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,700;1,500&family=Nunito:wght@400;600;700&display=swap');
+
+:root {
+    /* Palet Logo */
+    --hijau-tua: #3A5E22;
+    --hijau-sedang: #5D9C2E;
+    --hijau-muda: #8FBA3E;
+    --kuning-emas: #DEA116;
+    --cokelat-tanah: #5E3A1A;
+    
+    /* Warna Rustic / Membumi */
+    --bg-krem: #FDFBF7; 
+    --bg-krem-gelap: #F3EFE6;
+    --teks-cokelat-gelap: #2C241B;
+    --teks-cokelat-pudar: #5E5246;
+}
+
+/* --- 2. DASAR & TIPOGRAFI --- */
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--bg-krem);
+    color: var(--teks-cokelat-gelap);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, .navbar-brand {
+    font-family: 'Lora', serif;
+    color: var(--cokelat-tanah);
+}
+
+/* --- 3. BENTUK ORGANIK (ASYMMETRICAL RADIUS) --- */
+.organic-shape {
+    border-radius: 60px 15px 60px 15px;
+    overflow: hidden;
+}
+
+.organic-shape-alt {
+    border-radius: 15px 60px 15px 60px;
+    overflow: hidden;
+}
+
+/* --- 4. NAVBAR (TERINTEGRASI BACKGROUND GELAP) --- */
+.navbar-rustic {
+    background-color: var(--hijau-tua); 
+    border-bottom: 1px solid rgba(224, 213, 193, 0.15); 
+    padding: 15px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.navbar-rustic .navbar-brand span {
+    color: #FDFBF7 !important; 
+}
+
+.navbar-rustic .nav-link {
+    color: #FDFBF7 !important; 
+    font-weight: 600;
+    margin-left: 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-rustic .nav-link:hover, 
+.navbar-rustic .nav-link.active {
+    color: var(--kuning-emas) !important;
+}
+
+.navbar-rustic .navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+/* --- 5. HERO SECTION (OVERLAY TRANSPARAN) --- */
+.hero-rustic {
+    padding: 120px 0 100px 0;
+    /* Secara default menggunakan background-light.png */
+    background: linear-gradient(rgba(44, 36, 27, 0.75), rgba(58, 94, 34, 0.85)), 
+                url('../images/background-light.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    border-radius: 0 0 80px 80px; 
+    margin-bottom: 50px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    /* Transisi untuk pergantian background */
+    transition: background-image 0.4s ease, background-color 0.4s ease;
+}
+
+.hero-rustic h1 {
+    /* Menggunakan clamp() agar responsif otomatis */
+    /* Minimal 2rem (di HP), mengikuti lebar layar (5vw + 1rem), Maksimal 3.5rem (di PC) */
+    font-size: clamp(2rem, 5vw + 1rem, 3.5rem); 
+    color: #FDFBF7; 
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6); 
+}
+
+.hero-rustic p.lead {
+    color: #E0D5C1 !important; 
+}
+
+/* --- 6. KARTU, TOMBOL & IKON --- */
+.card-rustic {
+    background-color: var(--bg-krem);
+    border: 1px solid #E0D5C1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-rustic:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(94, 58, 26, 0.08);
+}
+
+.icon-rustic {
+    color: var(--kuning-emas);
+    background-color: #FFF;
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px 10px 40px 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+.btn-rustic {
+    background-color: var(--hijau-tua);
+    color: #FFF;
+    border: none;
+    border-radius: 30px 10px 30px 10px; 
+    padding: 12px 35px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.btn-rustic:hover {
+    background-color: var(--cokelat-tanah);
+    color: var(--kuning-emas);
+    border-radius: 10px 30px 10px 30px; 
+}
+
+/* --- 7. PETA & FOOTER --- */
+.map-rustic {
+    border: 8px solid var(--bg-krem-gelap);
+}
+
+.footer-rustic {
+    background-color: var(--cokelat-tanah);
+    color: #E0D5C1;
+    padding: 20px 0; /* Padding diperkecil (sebelumnya 50px) agar lebih ramping */
+    border-radius: 30px 30px 0 0; /* Lengkungan disesuaikan proporsinya (sebelumnya 80px) */
+    margin-top: 50px;
+}
+
+/* ==========================================================================
+   8. ANIMASI (SCROLL & HOVER)
+   ========================================================================== */
+.animate-float {
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0px); }
+}
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(40px);
+    visibility: hidden;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    will-change: opacity, visibility;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}
+
+/* ==========================================================================
+   DARK MODE (TEMA MALAM RUSTIC)
+   ========================================================================== */
+[data-theme="dark"] {
+    /* Latar belakang menjadi cokelat tanah sangat gelap untuk nuansa membumi */
+    --bg-krem: #1A1614; 
+    --bg-krem-gelap: #2C241B; 
+    
+    /* Warna teks diubah menjadi terang agar terbaca */
+    --teks-cokelat-gelap: #FDFBF7; 
+    --teks-cokelat-pudar: #C4B7A6; 
+    
+    /* Aksen Heading diubah ke kuning keemasan agar kontras di latar gelap */
+    --cokelat-tanah: var(--kuning-emas);
+}
+
+/* Menimpa background khusus .hero-rustic untuk Dark Mode */
+[data-theme="dark"] .hero-rustic {
+    /* Ganti ke background-dark.png dengan gradient overlay lebih gelap */
+    background: linear-gradient(rgba(26, 22, 20, 0.85), rgba(30, 48, 17, 0.9)), 
+                url('../images/background-dark.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+}
+
+/* Transisi halus (Smooth transition) saat mode diganti */
+body, .card-rustic, .navbar-rustic, .footer-rustic, .icon-rustic, .input-group, .map-rustic {
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
+
+/* Penyesuaian khusus untuk elemen input (Search bar di Dark Mode) */
+[data-theme="dark"] .input-group .input-group-text,
+[data-theme="dark"] .input-group input {
+    background-color: #2C241B !important;
+    color: #FDFBF7 !important;
+}
+
+/* Styling untuk Tombol Toggle di Navbar */
+/* Styling untuk Tombol Toggle di Navbar */
+.theme-toggle {
+    background: none;
+    border: none;
+    color: #FDFBF7; /* Diubah menjadi putih */
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+    margin-left: 15px;
+    padding: 5px 10px;
+}
+
+.theme-toggle:hover {
+    color: var(--kuning-emas);
+    transform: scale(1.1);
+}
+/* Perbaikan teks tombol saat di-hover di Dark Mode */
+[data-theme="dark"] .btn-rustic:hover {
+    background-color: var(--kuning-emas);
+    color: #1A1614 !important; /* Memaksa teks menjadi gelap agar terbaca jelas di atas tombol kuning */
+}

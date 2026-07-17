@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Desa Kertajaya | KKN UNSIKA 2026</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS (Dipanggil satu kali saja agar efisien) -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-rustic sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center fw-bold" href="../index.html">
+                <img src="../assets/images/logo.png" alt="Logo" width="40" height="40" class="me-2 organic-shape-alt">
+                <span>Kertajaya</span>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Tentang Desa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="umkm.html">Katalog UMKM</a></li>
+                </ul>
+
+                <!-- Tombol Dark Mode -->
+                <button id="theme-toggle" class="theme-toggle" aria-label="Ganti Tema">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-rustic text-center fade-in-section" style="padding: 80px 0 60px 0;">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Profil Wilayah.</h1>
+            <p class="lead" style="color: #E0D5C1;">Mengenal lebih dekat Desa Kertajaya, Jayakerta.</p>
+        </div>
+    </header>
+
+    <section class="py-4 fade-in-section">
+        <div class="container">
+            <!-- Foto Utama (Sudah ditambahkan ID dan default ke profil-light.png) -->
+            <div class="row align-items-center mb-5">
+                <div class="col-12 text-center">
+                    <img id="gambar-profil" src="../assets/images/profil-light.png" alt="Balai Desa Kertajaya" class="img-fluid organic-shape shadow-sm" style="max-height: 450px; width: 100%; object-fit: cover;">
+                </div>
+            </div>
+
+            <!-- Grid Informasi Desa -->
+            <div class="row g-4 mt-2">
+                <!-- Kartu 1: Sejarah -->
+                <div class="col-md-6 fade-in-section">
+                    <div class="card card-rustic h-100 organic-shape p-2">
+                        <div class="card-body">
+                            <h4 class="fw-bold mb-3" style="color: var(--hijau-tua)">
+                                <i class="fa-solid fa-clock-rotate-left me-2 text-kuning"></i>Sejarah Wilayah
+                            </h4>
+                            <p style="color: var(--teks-cokelat-pudar)">Desa Kertajaya merupakan salah satu dari 8 desa yang berada di bawah wilayah administrasi Kecamatan Jayakerta, Kabupaten Karawang. Wilayah Kecamatan Jayakerta sendiri merupakan hasil pemekaran dari Kecamatan Rengasdengklok.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kartu 2: Akses & Pemerintahan -->
+                <div class="col-md-6 fade-in-section" style="transition-delay: 0.2s;">
+                    <div class="card card-rustic h-100 organic-shape-alt p-2">
+                        <div class="card-body">
+                            <h4 class="fw-bold mb-3" style="color: var(--hijau-tua)">
+                                <i class="fa-solid fa-building-flag me-2 text-kuning"></i>Pemerintahan & Akses
+                            </h4>
+                            <p style="color: var(--teks-cokelat-pudar)">Berdasarkan data tahun 2022, pemerintahan Desa Kertajaya dipimpin oleh Kepala Desa Saepi Anwar. Secara aksesibilitas, jarak dari desa menuju Kantor Kecamatan Jayakerta adalah 7,5 km, sedangkan jarak menuju pusat pemerintahan (Kantor Bupati Karawang) berjarak 32 km.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kartu 3: Batas Wilayah -->
+                <div class="col-md-6 fade-in-section" style="transition-delay: 0.3s;">
+                    <div class="card card-rustic h-100 organic-shape-alt p-2">
+                        <div class="card-body">
+                            <h4 class="fw-bold mb-3" style="color: var(--hijau-tua)">
+                                <i class="fa-solid fa-map me-2 text-kuning"></i>Batas Administrasi
+                            </h4>
+                            <p style="color: var(--teks-cokelat-pudar)">Posisi strategis Desa Kertajaya dibatasi oleh wilayah-wilayah berikut:</p>
+                            <ul style="color: var(--teks-cokelat-pudar)">
+                                <li><strong>Utara:</strong> Berbatasan langsung dengan Desa Sukasari.</li>
+                                <li><strong>Selatan:</strong> Berbatasan langsung dengan Desa Kampungsawah.</li>
+                                <li><strong>Timur:</strong> Berbatasan langsung dengan Desa Jayakerta.</li>
+                                <li><strong>Barat:</strong> Berbatasan langsung dengan Desa Bolang.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kartu 4: Geografis & Potensi -->
+                <div class="col-md-6 fade-in-section" style="transition-delay: 0.4s;">
+                    <div class="card card-rustic h-100 organic-shape p-2">
+                        <div class="card-body">
+                            <h4 class="fw-bold mb-3" style="color: var(--hijau-tua)">
+                                <i class="fa-solid fa-seedling me-2 text-kuning"></i>Geografis & Potensi
+                            </h4>
+                            <p style="color: var(--teks-cokelat-pudar)">Secara geografis, dataran di wilayah Kecamatan Jayakerta memiliki tanah yang subur serta dialiri oleh jaringan sungai dan saluran irigasi, yang menjadikannya sebagai salah satu lumbung padi. Hal ini tidak hanya memajukan sektor pertanian Kertajaya, namun juga menumbuhkan potensi ekonomi lokal di sektor UMKM dan industri rumahan melalui semangat gotong royong warga.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-rustic text-center mt-5">
+        <div class="container">
+            <p class="fw-bold text-white mb-0">Tim KKN UNSIKA 2026</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

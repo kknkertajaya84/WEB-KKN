@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar UMKM | KKN UNSIKA 2026</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-rustic sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center fw-bold" href="../index.html">
+                <img src="../assets/images/logo.png" alt="Logo" width="40" height="40" class="me-2 organic-shape-alt">
+                <span>Kertajaya</span>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tentang-desa.html">Tentang Desa</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Katalog UMKM</a></li>
+                </ul>
+
+                <!-- Tombol Dark Mode -->
+                <button id="theme-toggle" class="theme-toggle" aria-label="Ganti Tema">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-rustic text-center fade-in-section" style="padding: 80px 0 60px 0;">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Katalog UMKM.</h1>
+            <p class="lead" style="color: #E0D5C1;">Mendukung karya dan roda ekonomi lokal.</p>
+        </div>
+    </header>
+
+    <section class="py-5 fade-in-section">
+        <div class="container">
+            <!-- Search Bar -->
+            <div class="row mb-5 justify-content-center">
+                <div class="col-md-8 col-lg-6 text-center">
+                    <div class="input-group shadow-sm" style="border-radius: 30px; overflow: hidden; border: 1px solid #E0D5C1;">
+                        <span class="input-group-text border-0" style="color: var(--hijau-tua); background-color: var(--bg-krem);">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <input type="text" id="searchInput" class="form-control border-0" placeholder="Cari nama UMKM, produk, atau kategori..." style="padding: 15px; box-shadow: none; background-color: var(--bg-krem); color: var(--teks-cokelat-gelap);">
+                    </div>
+                    <!-- Pesan jika tidak ada hasil -->
+                    <div id="noResultMessage" class="text-muted mt-3 d-none" style="color: var(--teks-cokelat-pudar) !important;">
+                        <i class="fa-solid fa-face-frown mb-2"></i> Maaf, UMKM atau produk tidak ditemukan.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid UMKM -->
+            <div class="row g-4" id="umkmContainer">
+                
+                <!-- UMKM 1 -->
+                <div class="col-md-6 col-lg-4 umkm-item fade-in-section">
+                    <div class="card card-rustic h-100 organic-shape">
+                        <div style="height: 200px; overflow: hidden;">
+                            <img src="../assets/images/UMKM/kufat.jpeg" alt="Kupat Tahu Bu Neng" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge mb-2 umkm-category" style="background-color: var(--kuning-emas); color: var(--teks-cokelat-gelap);">Kuliner</span>
+                            <h5 class="fw-bold umkm-title" style="color: var(--hijau-tua);">Kupat Tahu Bu Neng</h5>
+                            <p class="text-muted umkm-desc" style="color: var(--teks-cokelat-pudar) !important;">Sajian kupat tahu lezat dengan bumbu kacang gurih khas yang menggugah selera.</p>
+                            <a href="https://www.google.com/maps/place/Kupat+Tahu+Bu+Neng/@-6.0838455,107.3021016,44m/data=!3m1!1e3!4m14!1m7!3m6!1s0x2e6bd5004846a22b:0xc3219def3e4cfd1!2sKupat+Tahu+Bu+Neng!8m2!3d-6.0838455!4d107.3022625!16s%2Fg%2F11zggttdbp!3m5!1s0x2e6bd5004846a22b:0xc3219def3e4cfd1!8m2!3d-6.0838455!4d107.3022625!16s%2Fg%2F11zggttdbp?entry=ttu&g_ep=EgoyMDI2MDcxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn btn-rustic btn-sm">Lihat Lokasi</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UMKM 2 -->
+                <div class="col-md-6 col-lg-4 umkm-item fade-in-section" style="transition-delay: 0.1s;">
+                    <div class="card card-rustic h-100 organic-shape">
+                        <div style="height: 200px; overflow: hidden;">
+                            <img src="../assets/images/UMKM/kelapa.jpg" alt="Es Kelapa Muda Aneka Rasa" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge mb-2 umkm-category" style="background-color: var(--kuning-emas); color: var(--teks-cokelat-gelap);">Kuliner</span>
+                            <h5 class="fw-bold umkm-title" style="color: var(--hijau-tua);">Es Kelapa Muda Aneka Rasa</h5>
+                            <p class="text-muted umkm-desc" style="color: var(--teks-cokelat-pudar) !important;">Segarkan harimu dengan es kelapa muda asli pilihan berpadu aneka rasa sirup nikmat.</p>
+                            <a href="https://www.google.com/maps/place/Es+Kelapa+Muda+Aneka+Rasa/@-6.0848157,107.3029484,711m/data=!3m2!1e3!4b1!4m6!3m5!1s0x2e6bd5000fb3ef33:0x23c65f96f04fae20!8m2!3d-6.0848157!4d107.3029484!16s%2Fg%2F11zggtsp73?entry=ttu&g_ep=EgoyMDI2MDcxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn btn-rustic btn-sm">Lihat Lokasi</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UMKM 3 -->
+                <div class="col-md-6 col-lg-4 umkm-item fade-in-section" style="transition-delay: 0.2s;">
+                    <div class="card card-rustic h-100 organic-shape">
+                        <div style="height: 200px; overflow: hidden;">
+                            <img src="../assets/images/UMKM/nasdang-fajar.jpeg" alt="Masakan Padang Fajar Baru 02" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge mb-2 umkm-category" style="background-color: var(--kuning-emas); color: var(--teks-cokelat-gelap);">Kuliner</span>
+                            <h5 class="fw-bold umkm-title" style="color: var(--hijau-tua);">Masakan Padang Fajar Baru 02</h5>
+                            <p class="text-muted umkm-desc" style="color: var(--teks-cokelat-pudar) !important;">Nikmati aneka hidangan masakan Padang otentik dengan cita rasa rempah yang kaya.</p>
+                            <a href="https://www.google.com/maps/place/Masakan+Padang+Fajar+Baru+02/@-6.0837971,107.3021865,44m/data=!3m1!1e3!4m12!1m5!8m4!1e2!2s106760655987966111202!3m1!1e1!3m5!1s0x2e6bd500575487eb:0x9e25203e0a88210d!8m2!3d-6.0838455!4d107.3022625!16s%2Fg%2F11nqt_58kn?entry=ttu&g_ep=EgoyMDI2MDcxNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn btn-rustic btn-sm">Lihat Lokasi</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UMKM 4 -->
+                <div class="col-md-6 col-lg-4 umkm-item fade-in-section">
+                    <div class="card card-rustic h-100 organic-shape">
+                        <div style="height: 200px; overflow: hidden;">
+                            <img src="../assets/images/UMKM/mie-goku.jpeg" alt="Mie Goku Bang Adul" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge mb-2 umkm-category" style="background-color: var(--kuning-emas); color: var(--teks-cokelat-gelap);">Kuliner</span>
+                            <h5 class="fw-bold umkm-title" style="color: var(--hijau-tua);">Mie Goku Bang Adul</h5>
+                            <p class="text-muted umkm-desc" style="color: var(--teks-cokelat-pudar) !important;">Kedai mie kekinian dengan racikan bumbu spesial yang pedas, gurih, dan nikmat.</p>
+                            <a href="https://www.google.com/maps/place/Mie+Goku+Bang+Adul/@-6.083877,107.3022569,44m/data=!3m1!1e3!4m12!1m5!8m4!1e2!2s106760655987966111202!3m1!1e1!3m5!1s0x2e6bd5004046cbc3:0x8d76822a857bbde1!8m2!3d-6.0838455!4d107.3022625!16s%2Fg%2F11nqsld1d6?entry=ttu&g_ep=EgoyMDI2MDcxNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn btn-rustic btn-sm">Lihat Lokasi</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UMKM 5 -->
+                <div class="col-md-6 col-lg-4 umkm-item fade-in-section" style="transition-delay: 0.1s;">
+                    <div class="card card-rustic h-100 organic-shape">
+                        <div style="height: 200px; overflow: hidden;">
+                            <img src="../assets/images/UMKM/fotkop-aleena.jpeg" alt="Foto Copy & Print Aleena" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge mb-2 umkm-category" style="background-color: var(--cokelat-tanah); color: white;">Jasa</span>
+                            <h5 class="fw-bold umkm-title" style="color: var(--hijau-tua);">Foto Copy & Print Aleena</h5>
+                            <p class="text-muted umkm-desc" style="color: var(--teks-cokelat-pudar) !important;">Melayani jasa fotokopi, cetak dokumen, dan penyediaan perlengkapan alat tulis kantor yang lengkap.</p>
+                            <a href="https://www.google.com/maps/place/Foto+Copy+%26+Print+Aleena/@-6.0838442,107.3016188,178m/data=!3m2!1e3!4b1!4m12!1m5!8m4!1e2!2s106760655987966111202!3m1!1e1!3m5!1s0x2e6bd50037ccff75:0x1c34bea7ca676805!8m2!3d-6.0838455!4d107.3022625!16s%2Fg%2F11zggxs5c0?entry=ttu&g_ep=EgoyMDI2MDcxNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn btn-rustic btn-sm">Lihat Lokasi</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UMKM 6 -->
+                <div class="col-md-6 col-lg-4 umkm-item fade-in-section" style="transition-delay: 0.2s;">
+                    <div class="card card-rustic h-100 organic-shape">
+                        <div style="height: 200px; overflow: hidden;">
+                            <img src="../assets/images/UMKM/lala-lali.jpg" alt="Es Teler Lala Lali" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge mb-2 umkm-category" style="background-color: var(--kuning-emas); color: var(--teks-cokelat-gelap);">Kuliner</span>
+                            <h5 class="fw-bold umkm-title" style="color: var(--hijau-tua);">Es Teler Lala Lali</h5>
+                            <p class="text-muted umkm-desc" style="color: var(--teks-cokelat-pudar) !important;">Nikmati es teler manis dan segar dengan isian aneka buah melimpah pelepas dahaga.</p>
+                            <a href="https://www.google.com/maps/place/Lala+Lali/@-6.0882559,107.307533,89m/data=!3m1!1e3!4m6!3m5!1s0x2e6bd50057fe9733:0x4488a8868576b8df!8m2!3d-6.088312!4d107.3074734!16s%2Fg%2F11xlfz6png?entry=ttu&g_ep=EgoyMDI2MDcxNC4wIKXMDSoASAFQAw%3D%3DI" target="_blank" class="btn btn-rustic btn-sm">Lihat Lokasi</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UMKM 7 -->
+                <div class="col-md-6 col-lg-4 umkm-item fade-in-section">
+                    <div class="card card-rustic h-100 organic-shape">
+                        <div style="height: 200px; overflow: hidden;">
+                            <img src="../assets/images/UMKM/baso-buron.png" alt="Bakso Buronan" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge mb-2 umkm-category" style="background-color: var(--kuning-emas); color: var(--teks-cokelat-gelap);">Kuliner</span>
+                            <h5 class="fw-bold umkm-title" style="color: var(--hijau-tua);">Bakso Buronan</h5>
+                            <p class="text-muted umkm-desc" style="color: var(--teks-cokelat-pudar) !important;">Kedai bakso daging sapi asli yang kenyal dipadukan dengan kuah kaldu gurih mantap.</p>
+                            <a href="https://www.google.com/maps/place/BASO+BURONAN/@-6.0806036,107.3002224,89m/data=!3m1!1e3!4m6!3m5!1s0x2e6bd52838bc8e85:0x2e81e4ceebceaf5f!8m2!3d-6.0806266!4d107.3001861!16s%2Fg%2F11ywn4ttm0?entry=ttu&g_ep=EgoyMDI2MDcxNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn btn-rustic btn-sm">Lihat Lokasi</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UMKM 8 -->
+                <div class="col-md-6 col-lg-4 umkm-item fade-in-section" style="transition-delay: 0.1s;">
+                    <div class="card card-rustic h-100 organic-shape">
+                        <div style="height: 200px; overflow: hidden;">
+                            <img src="../assets/images/UMKM/toko-udin.png" alt="Toko H. Udin Tabe" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge mb-2 umkm-category" style="background-color: var(--hijau-sedang); color: white;">Sembako</span>
+                            <h5 class="fw-bold umkm-title" style="color: var(--hijau-tua);">Toko H. Udin Tabe</h5>
+                            <p class="text-muted umkm-desc" style="color: var(--teks-cokelat-pudar) !important;">Toko kelontong serba ada yang menyediakan berbagai macam kebutuhan pokok sehari-hari bagi warga.</p>
+                            <a href="https://www.google.com/maps/place/TK+H.UDIN+TABE/@-6.0847347,107.3029289,53m/data=!3m1!1e3!4m6!3m5!1s0x2e6bd500432b997d:0x1e51c37689902a78!8m2!3d-6.0847145!4d107.3030322!16s%2Fg%2F11vzqgv76p?entry=ttu&g_ep=EgoyMDI2MDcxNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn btn-rustic btn-sm">Lihat Lokasi</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UMKM 9 -->
+                <div class="col-md-6 col-lg-4 umkm-item fade-in-section" style="transition-delay: 0.2s;">
+                    <div class="card card-rustic h-100 organic-shape">
+                        <div style="height: 200px; overflow: hidden;">
+                            <img src="../assets/images/UMKM/laundry.png" alt="Recolour Laundry Express" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge mb-2 umkm-category" style="background-color: var(--cokelat-tanah); color: white;">Jasa</span>
+                            <h5 class="fw-bold umkm-title" style="color: var(--hijau-tua);">Recolour Laundry Express</h5>
+                            <p class="text-muted umkm-desc" style="color: var(--teks-cokelat-pudar) !important;">Jasa cuci pakaian dan setrika super kilat, bersih, harum, dengan layanan harga terjangkau.</p>
+                            <a href="https://www.google.com/maps/place/Recolour+Laundry+Expres/@-6.0847369,107.3029529,178m/data=!3m1!1e3!4m6!3m5!1s0x2e6bd525e4eb227d:0x19f13f2cd0a17339!8m2!3d-6.0848002!4d107.3029519!16s%2Fg%2F11zbskflrc!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDcxNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn btn-rustic btn-sm">Lihat Lokasi</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-rustic text-center mt-5">
+        <div class="container">
+            <p class="fw-bold text-white mb-0">Tim KKN UNSIKA 2026</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/main.js"></script>
+
+    <!-- Script Filter Pencarian UMKM Real-Time -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const searchInput = document.getElementById("searchInput");
+            const umkmItems = document.querySelectorAll(".umkm-item");
+            const noResultMessage = document.getElementById("noResultMessage");
+
+            if (searchInput) {
+                searchInput.addEventListener("input", function() {
+                    const searchValue = searchInput.value.toLowerCase().trim();
+                    let hasVisibleCards = false;
+
+                    umkmItems.forEach(function(item) {
+                        const title = item.querySelector(".umkm-title").textContent.toLowerCase();
+                        const desc = item.querySelector(".umkm-desc").textContent.toLowerCase();
+                        const category = item.querySelector(".umkm-category").textContent.toLowerCase();
+
+                        if (title.includes(searchValue) || desc.includes(searchValue) || category.includes(searchValue)) {
+                            item.style.display = "block"; 
+                            hasVisibleCards = true;
+                        } else {
+                            item.style.display = "none"; 
+                        }
+                    });
+
+                    if (!hasVisibleCards) {
+                        noResultMessage.classList.remove("d-none");
+                        noResultMessage.classList.add("d-block");
+                    } else {
+                        noResultMessage.classList.remove("d-block");
+                        noResultMessage.classList.add("d-none");
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
