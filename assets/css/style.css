@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, .navbar-brand {
     padding: 120px 0 100px 0;
     /* Secara default menggunakan background-light.png */
     background: linear-gradient(rgba(44, 36, 27, 0.75), rgba(58, 94, 34, 0.85)), 
-                url('../images/background-light.png');
+                url('../images/background-light.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; 
@@ -202,7 +202,7 @@ h1, h2, h3, h4, h5, .navbar-brand {
 [data-theme="dark"] .hero-rustic {
     /* Ganti ke background-dark.png dengan gradient overlay lebih gelap */
     background: linear-gradient(rgba(26, 22, 20, 0.85), rgba(30, 48, 17, 0.9)), 
-                url('../images/background-dark.png');
+                url('../images/background-dark.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; 
