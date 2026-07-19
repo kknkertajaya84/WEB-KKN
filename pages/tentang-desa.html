@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- === OPTIMASI SEO MULAI === -->
+    <meta name="description" content="Profil dan informasi lengkap Desa Kertajaya, Kecamatan Jayakerta, Karawang. Jelajahi sejarah, batas wilayah, pemerintahan, dan potensi geografis desa.">
+    <meta name="keywords" content="Profil Desa Kertajaya, Sejarah Kertajaya, Pemerintahan Desa Kertajaya, KKN UNSIKA 2026, Jayakerta Karawang, Potensi Desa">
+    <meta name="author" content="Tim KKN UNSIKA 2026">
+    <!-- === OPTIMASI SEO SELESAI === -->
+
     <title>Profil Desa Kertajaya | KKN UNSIKA 2026</title>
+
+    <!-- Optimasi Loading Gambar: Preload background utama agar muncul instan -->
+    <link rel="preload" as="image" href="../assets/images/background-light.webp">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- FontAwesome untuk Ikon -->
@@ -16,7 +27,7 @@
     <nav class="navbar navbar-expand-lg navbar-rustic sticky-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center fw-bold" href="../index.html">
-                <img src="../assets/images/logo.png" alt="Logo" width="40" height="40" class="me-2 organic-shape-alt">
+                <img src="../assets/images/logo.webp" alt="Logo" width="40" height="40" class="me-2 organic-shape-alt">
                 <span>Kertajaya</span>
             </a>
             <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -46,10 +57,10 @@
 
     <section class="py-4 fade-in-section">
         <div class="container">
-            <!-- Foto Utama (Sudah ditambahkan ID dan default ke profil-light.png) -->
+            <!-- Foto Utama (Sudah ditambahkan ID, default ke profil-light.png, dan loading="lazy") -->
             <div class="row align-items-center mb-5">
                 <div class="col-12 text-center">
-                    <img id="gambar-profil" src="../assets/images/profil-light.png" alt="Balai Desa Kertajaya" class="img-fluid organic-shape shadow-sm" style="max-height: 450px; width: 100%; object-fit: cover;">
+                    <img id="gambar-profil" src="../assets/images/profil-light.webp" alt="Balai Desa Kertajaya" class="img-fluid organic-shape shadow-sm" style="max-height: 450px; width: 100%; object-fit: cover;" loading="lazy">
                 </div>
             </div>
 
