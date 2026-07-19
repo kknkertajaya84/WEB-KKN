@@ -65,15 +65,15 @@ document.addEventListener("DOMContentLoaded", function() {
             document.documentElement.setAttribute('data-theme', 'dark');
             if (themeIcon) themeIcon.classList.replace('fa-moon', 'fa-sun');
             // Menukar src gambar profil jika elemennya ada di halaman tersebut
-            if (profilImg && profilImg.src.includes('profil-light.png')) {
-                profilImg.src = profilImg.src.replace('profil-light.png', 'profil-dark.png');
+            if (profilImg && profilImg.src.includes('profil-light.webp')) {
+                profilImg.src = profilImg.src.replace('profil-light.webp', 'profil-dark.webp');
             }
         } else {
             document.documentElement.removeAttribute('data-theme');
             if (themeIcon) themeIcon.classList.replace('fa-sun', 'fa-moon');
             // Mengembalikan gambar profil ke mode terang
-            if (profilImg && profilImg.src.includes('profil-dark.png')) {
-                profilImg.src = profilImg.src.replace('profil-dark.png', 'profil-light.png');
+            if (profilImg && profilImg.src.includes('profil-dark.webp')) {
+                profilImg.src = profilImg.src.replace('profil-dark.webp', 'profil-light.webp');
             }
         }
     }
