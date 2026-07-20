@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Halaman Beranda -->
+  <url>
+    <loc>https://kknkertajaya84.github.io/WEB-KKN/index.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Halaman Katalog UMKM (Penting untuk sering diperbarui) -->
+  <url>
+    <loc>https://kknkertajaya84.github.io/WEB-KKN/pages/umkm.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Halaman Tentang Desa -->
+  <url>
+    <loc>https://kknkertajaya84.github.io/WEB-KKN/pages/tentang-desa.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
